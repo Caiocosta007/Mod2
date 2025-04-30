@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalisando link</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color:rgb(173, 22, 22);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(173, 22, 22);
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: rgb(70, 17, 17);
+        }
+
+        a:active{
+            color: rgb(112, 57, 53);
+        }
+
+        h1{
+            color:  rgb(70, 17, 17);
+        }
+
+        h1:active{
+            color: yellow;
+        }
+
+        .especial::before{
+            content: '⮕';
+            color: rgba(78, 75, 75, 0.281);
+        }
+
+        .especial::after{
+            content: '⬅';
+            color: rgba(78, 75, 75, 0.281);
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1>Personalisando links</h1>
+
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Repositorio github</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">Canal do youtube</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Site de curiosidades</a></li>
+    </ul>
+    
+</body>
+</html>
