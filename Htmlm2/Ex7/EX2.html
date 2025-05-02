@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.6em;
+            font-weight: bolder;
+            background-color: rgba(128, 128, 128, 0.185);
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        td.numero{
+            text-align: right;
+        }
+
+        thead{
+            background-color: rgb(73, 72, 72);
+            color: white;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.493);
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 72, 72););
+        }
+
+        tfoot{
+            background-color: rgb(73, 72, 72);
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <table>
+        <caption>População do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Rio Gramde do Sul</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Amapa</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Cuiaba</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Rio Gramde do Sul</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Amapa</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Cuiaba</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Cuiaba</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="numero"><strong>253.058.349</strong></td>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
