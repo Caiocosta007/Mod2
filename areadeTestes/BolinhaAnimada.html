@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolinha Animada</title>
+    <style>
+
+        body {
+  background-color: rgb(224, 218, 218);
+  display: flex;                 
+  justify-content: center;       
+  align-items: center;          
+  height: 100vh;                 
+  margin: auto;                     
+}
+
+        #V{
+            background: rgba(255, 0, 0, 0.651);
+        }
+        #A{
+            background: rgba(30, 255, 0, 0.651);
+        }
+        #M{
+            background: rgba(47, 0, 255, 0.651);
+        }
+        #Am{
+            background: rgba(217, 255, 0, 0.651);
+        }
+
+        .Carregamento{
+            display: flex;
+            gap: 8px;
+        }
+
+        .Carregamento span{
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ;
+        }
+
+        .Carregamento span:nth-child(1) {
+        animation-delay: 0.1s;
+        }
+        .Carregamento span:nth-child(2) {
+        animation-delay: 0.3s;
+        }
+        .Carregamento span:nth-child(3) {
+        animation-delay: 0.5s;
+        }
+        .Carregamento span:nth-child(4) {
+        animation-delay: 0.7s;
+        }
+        
+
+        @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-40px) ; }
+        }
+    </style>
+</head>
+<body>
+    <div class="Carregamento">
+        <span id="V"></span>
+        <span id="A"></span>
+        <span id="M"></span>
+        <span id="Am"></span>
+    </div>
+</body>
+</html>
